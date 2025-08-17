@@ -1,51 +1,59 @@
-# Obligatorio
+# Intro
 
-El obligatorio de **Estructuras de Datos y Algoritmos 2** está compuesto por un conjunto de **10** problemas a resolver.
+Los obligatorios de **Estructuras de Datos y Algoritmos 2** están compuestos por una serie de ejericicios que deben entregarse junto a la documentación correspondiente. A continuación se detallan las reglas y condiciones de entrega.
 
 ## Reglas
 
--   Se deberá realizar en grupos de **2 estudiantes**. En caso de no poder conformar un grupo de 2 estudiantes, deberá consultar al profesor.
+- Se deberá realizar en grupos de **2 estudiantes**. En caso de no poder conformar un grupo de 2 estudiantes, deberá consultar al profesor.
 
--   Se podrá utilizar tanto **C++** (C++11) como **Java** (jdk8).
+- Se podrá utilizar tanto **C++** (C++11) como **Java** (jdk8).
 
-    - Para asegurar que utilizan C++11 deberán tener instalado el
+  - Para asegurar que utilizan C++11 deberán tener instalado el
     compilador C++ de GNU e invocar la siguiente orden: **g++ -std=c++11...**
 
-    - Para asegurar que utilizan **jdk8** deberán tener instalado el
+  - Para asegurar que utilizan **jdk8** deberán tener instalado el
     compilador de Java de Oracle e invocar la siguiente orden: **java -version**
 
--   No se puede usar ninguna librería, clase, estructura, función o
-    variable no definida por el estudiante, a excepción de \<iostream\>,
-    \<string\> y \<cstring\> para C++. y System.in, System.out y String
-    para Java. Si se quiere usar algo que no sea lo listado anteriormente,
-    consultar previamente al profesor.
+- No se puede usar ninguna librería, clase, estructura, función o
+  variable no definida por el estudiante, a excepción de \<iostream\>,
+  \<string\> y \<cstring\> para C++. y System.in, System.out y String
+  para Java. Si se quiere usar algo que no sea lo listado anteriormente,
+  consultar previamente al profesor.
 
--   Se deberá utilizar el formato de ejecución trabajado durante el
-    curso:
-    ```bash
-    miSolucion < test.in.txt > test.myout.txt
-    ```
+- Se deberá utilizar el formato de ejecución trabajado durante el
+  curso:
 
--   La cátedra proveerá un conjunto de casos de prueba, pares de entrada
-    y salida esperada. Se deberá comparar la salida de la solución
-    contra una salida esperada.
+  ```bash
+  miSolucion < test.in.txt > test.myout.txt
+  ```
+
+- La cátedra proveerá un conjunto de casos de prueba, pares de entrada
+  y salida esperada. Se deberá comparar la salida de la solución
+  contra una salida esperada.
 
 !> **De no cumplir las condiciones anteriores podría implicar la pérdida de puntos (parcial o total).**
 
 ## Ejercicios
+
+Cada entrega/obligatorio debe cumplir con los ejercicios obligatorios que se detallan a continuación:
+
+**Obligatorio 1 (22/05):**
 
 - [Ejercicio 1](/ejercicios/ejercicio1)
 - [Ejercicio 2](/ejercicios/ejercicio2)
 - [Ejercicio 3](/ejercicios/ejercicio3)
 - [Ejercicio 4](/ejercicios/ejercicio4)
 - [Ejercicio 5](/ejercicios/ejercicio5)
+
+**Obligatorio 2 (21/06):**
+
 - [Ejercicio 6](/ejercicios/ejercicio6)
 - [Ejercicio 7](/ejercicios/ejercicio7)
 - [Ejercicio 8](/ejercicios/ejercicio8)
 - [Ejercicio 9](/ejercicios/ejercicio9)
 - [Ejercicio 10](/ejercicios/ejercicio10)
 
-> Ten en cuenta que los ejercicios se irán publicando a medida que transcurra el semestre. ¡No te pierdas las actualizaciones por foro de Aulas!
+> Ten en cuenta que ocurran cambios de letra/pruebas durante el transcurso el semestre. ¡Las actualizaciones se notifican por foro de Aulas!
 
 ## Pruebas
 
@@ -56,32 +64,32 @@ La cátedra proveerá un conjunto de casos de prueba, pares de entrada y salida 
 - El formato del **código fuente** de la entrega se encuentra definido en [este enlace](/formato).
 - Además, se deberá entregar un **informe/documentación** en formato pdf que contenga lo definido en [este enlace](/documentacion).
 
+> No se deben entregar `pruebas`, `archivos compilados` ni `scripts` para correr las pruebas.
 
 ## Corrección
 
--   La corrección implica la verificación contra la salida esperada, así
-    también como la corrección del código fuente para verificar que se
-    cumplan los requerimientos solicitados (órdenes de tiempo de
-    ejecución, usos de estructuras o algoritmos en particular, etc.).
+- La corrección implica la verificación contra la salida esperada, así
+  también como la corrección del código fuente para verificar que se
+  cumplan los requerimientos solicitados (órdenes de tiempo de
+  ejecución, usos de estructuras o algoritmos en particular, etc.).
 
--   Se verificarán TODOS los casos de prueba. Si el programa no termina
-    para un caso de prueba, puede implicar la pérdida de puntos.
+- Se verificarán TODOS los casos de prueba. Si el programa no termina
+  para un caso de prueba, puede implicar la pérdida de puntos.
 
--   Si el código fuente se encuentra en un estado que dificulta la
-    comprensión, podrá perder puntos.
+- Si el código fuente se encuentra en un estado que dificulta la
+  comprensión, podrá perder puntos.
 
--   Los códigos dados en clase como algoritmos encontrados de otras
-    fuentes serán usados como referencia.
+- Los códigos dados en clase como algoritmos encontrados de otras
+  fuentes serán usados como referencia.
 
--   La falta de documentación o la falta de citación de fuentes
-    implicará la pérdida de puntos.
+- La falta de documentación o la falta de citación de fuentes
+  implicará la pérdida de puntos.
 
--   **Se utilizará MOSS para detectar copias.**
+- **Se utilizará MOSS para detectar copias.**
 
 ## Defensa
 
 Los detalles de la defensa se encuentran en [este enlace](/defensa).
-
 
 ## Entrega
 
@@ -94,35 +102,35 @@ recibirá información específica en el dictado de la misma.
 Los principales aspectos a destacar sobre la **entrega online de
 obligatorios** son:
 
-1.  La entrega se realizará desde **[gestion.ort.edu.uy](http://gestion.ort.edu.uy)**
+1. La entrega se realizará desde **[gestion.ort.edu.uy](http://gestion.ort.edu.uy)**
 
-2.  Previo a la conformación de grupos cada estudiante deberá estar
-    inscripto a la evaluación. **Sugerimos realizarlo con
-    anticipación.**
+2. Previo a la conformación de grupos cada estudiante deberá estar
+   inscripto a la evaluación. **Sugerimos realizarlo con
+   anticipación.**
 
-3.  **Uno de los integrantes del grupo de obligatorio será el
-    administrador del mismo** y es quien formará el equipo y subirá la
-    entrega
+3. **Uno de los integrantes del grupo de obligatorio será el
+   administrador del mismo** y es quien formará el equipo y subirá la
+   entrega
 
-4.  Cada equipo debe entregar **un único archivo en formato zip o rar** 
-    (los documentos de texto deben ser pdf, y deben ir dentro del zip o
-    rar)
+4. Cada equipo debe entregar **un único archivo en formato zip o rar**
+   (los documentos de texto deben ser pdf, y deben ir dentro del zip o
+   rar)
 
-5.  El archivo a subir debe tener **un tamaño máximo de 40 mb**
+5. El archivo a subir debe tener **un tamaño máximo de 40 mb**
 
-6.  Les sugerimos **realicen una \'prueba de subida\' al menos un día
-    antes**, donde conformarán el **\'grupo de obligatorio\'.**
+6. Les sugerimos **realicen una \'prueba de subida\' al menos un día
+   antes**, donde conformarán el **\'grupo de obligatorio\'.**
 
-7.  La **hora tope para subir el archivo será las 21:00** del día fijado
-    para la entrega.
+7. La **hora tope para subir el archivo será las 21:00** del día fijado
+   para la entrega.
 
-8.  La entrega se podrá realizar desde cualquier lugar (ej. hogar del
-    estudiante, laboratorios de la Universidad, etc)
+8. La entrega se podrá realizar desde cualquier lugar (ej. hogar del
+   estudiante, laboratorios de la Universidad, etc)
 
-9.  Aquellos de ustedes que presenten alguna dificultad con su
-    inscripción o tengan inconvenientes técnicos, por favor pasar por la
-    oficina del Coordinador o por Coordinación adjunta **antes de las
-    20:00hs.** del día de la entrega
+9. Aquellos de ustedes que presenten alguna dificultad con su
+   inscripción o tengan inconvenientes técnicos, por favor pasar por la
+   oficina del Coordinador o por Coordinación adjunta **antes de las
+   20:00hs.** del día de la entrega
 
 Si tuvieras una situación particular de fuerza mayor, debes dirigirte
 con suficiente antelación al plazo de entrega, al Coordinador de Cursos

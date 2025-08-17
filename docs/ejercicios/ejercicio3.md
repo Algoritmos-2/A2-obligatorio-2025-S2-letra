@@ -1,22 +1,20 @@
-# Ejercicio 3 - [nombre del ejercicio]
+# Ejercicio 3: Sistema de Caché Web con Hash Abierto
 
 ## Descripción
 
-## Entrada
+Implementar el mismo sistema de caché web del **Ejercicio 2**, pero utilizando **hash abierto (separate chaining)** en lugar de hash cerrado.
 
+Ver [Ejercicio 2](ejercicio2.md) para la descripción completa del problema.
 
-## Salida
+## Diferencia de Implementación
 
+- Usar **hash abierto (separate chaining)** con listas enlazadas
+- Mantener las mismas complejidades temporales que el Ejercicio 2
 
-## Restricciones
+## Operaciones y Formato
 
-
-## Ejemplo
-
-### Input
-
-
-### Output
-
-
-### Explicación
+Idénticos al Ejercicio 2. Consultar [ejercicio2.md](ejercicio2.md) para:
+- Lista completa de operaciones
+- Formato de entrada y salida
+- Ejemplos de uso
+- Restricciones

@@ -4,7 +4,7 @@
 
 Dado un grafo no dirigido con pesos en las aristas, encontrar el peso total del **Árbol de Cubrimiento Mínimo (Minimum Spanning Tree)** utilizando **Kruskal** con **DisjointSet optimizado**.
 
-Si el grafo no es conectado, se debe encontrar el bosque de cubrimiento mínimo (suma de los árboles de cubrimiento mínimo de cada componente conexa).
+Si el grafo no es conexo, se debe encontrar el bosque de cubrimiento mínimo (suma de los árboles de cubrimiento mínimo de cada componente conexa).
 
 ## Entrada
 

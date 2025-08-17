@@ -1,30 +1,32 @@
 # Defensa
 
-La defensa del obligatorio es una parte esencial del proceso de evaluación, que permite al alumno demostrar sus competencias y conocimientos de manera presencial. A continuación se presenta la estructura y las expectativas de esta instancia evaluativa.
+La defensa es obligatoria y eliminatoria. La no realización de la misma implica la pérdida de la totalidad de los puntos de los obligatorios.
+
+La defensa es una instancia clave del proceso de evaluación, en la que el alumno debe demostrar una comprensión clara sobre los algoritmos, estructuras de datos y decisiones técnicas empleadas en la elaboración de los obligatorios. A continuación se detallan la modalidad y expectativas para esta evaluación.
 
 ## Modalidad y Preparación
 
-- **Presencialidad**: La defensa se realiza en la facultad y es estrictamente individual.
-- **Material**: El alumno debe estar preparado para descargar su obligatorio desde el sitio de **[Gestión de ORT](http://gestion.ort.edu.uy)**.
-- **Entorno de Trabajo**: La defensa se lleva a cabo en las computadoras con sistema operativo Windows proporcionadas por la facultad (laboratorios). **El alumno debe ser capaz de compilar y ejecutar su proyecto en este entorno**.
+- **Forma Escrita**: La defensa comprende preguntas escritas sobre ambos obligatorios y se realizará el mismo día que el segundo parcial (ver calendario de eventos).
+- **Duración**: La duración máxima de la defensa escrita será de 15 minutos.
+- **Contenido**: Las preguntas se centrarán en la justificación de algoritmos, estructuras de datos, versiones y decisiones específicas tomadas en cada uno de los ejercicios realizados durante ambos obligatorios.
 
 ## Dinámica de la Defensa
 
-- **Cambios al Azar**: Durante la defensa, se le solicitará al alumno realizar modificaciones específicas en su proyecto. Estos cambios son predefinidos y asignados de manera aleatoria.
-- **Evaluación de Habilidades**: Se evaluará la capacidad del alumno para entender y modificar su código de manera eficaz, así como para compilar y ejecutar pruebas en el entorno provisto.
-- **Tests Adicionales**: En ciertas ocasiones, se podrán proporcionar tests adicionales para verificar las modificaciones realizadas, aunque esto no es habitual en todas las defensas.
+- **Entrega y Realización**: La defensa se llevará a cabo inmediatamente después de la entrega del segundo parcial.
+- **No memorización**: El objetivo no es que el alumno memorice su código, sino que sea capaz de explicar y justificar las decisiones técnicas adoptadas, así como demostrar su comprensión del funcionamiento de los algoritmos y estructuras empleadas.
+- **Segunda instancia oral**: En caso de considerarlo necesario, el docente podrá citar al alumno o grupo a una segunda instancia de defensa oral online, coordinada posteriormente.
 
 ## Expectativas
 
-La defensa es una etapa decisiva en la que el alumno debe consolidar y demostrar su dominio de los conceptos y habilidades técnicas desarrolladas a lo largo del curso. Es imperativo que el alumno pueda:
+Durante la defensa escrita, el alumno debe demostrar:
 
-- Compilar su código sin errores.
-- Realizar tareas básicas de programación con las que debería estar familiarizado (correr pruebas por consola, chequear pruebas).
-- Efectuar los cambios solicitados por los docentes durante la defensa.
+- Comprensión sólida sobre los algoritmos y estructuras utilizados.
+- Capacidad de justificar decisiones técnicas y versiones elegidas.
+- Claridad en la explicación sobre el funcionamiento general del código desarrollado.
 
-!> La incapacidad para realizar cualquiera de estas tareas fundamentales podría interpretarse como una falta de preparación adecuada o una comprensión insuficiente de los contenidos del curso. En consecuencia, esto puede resultar en una **pérdida parcial o total de los puntos asignados al obligatorio**.
+!> Una demostración insuficiente de comprensión en cualquiera de estos puntos puede implicar una pérdida parcial o total de los puntos asignados a los obligatorios.
 
 ## Consideraciones Importantes
 
-- **Preparación Técnica**: Se recomienda que el alumno se familiarice con el entorno de Windows y las herramientas de desarrollo disponibles, para asegurarse de poder realizar las tareas requeridas sin inconvenientes.
-- **Ejercicio no realizado**: Si la defensa asignada corresponde a un ejercicio no realizado o que se encuentra en condiciones deficientes, se procederá a cambiar el ejercicio al alumno.
+- **Preparación Conceptual**: Se recomienda revisar previamente los algoritmos y estructuras empleadas en los obligatorios, así como las razones detrás de cada elección técnica tomada.
+- **Defensa complementaria**: La defensa oral, en caso de realizarse, se coordinará de forma online en fecha y horario acordados entre docentes y alumnos involucrados.

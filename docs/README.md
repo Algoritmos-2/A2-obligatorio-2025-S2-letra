@@ -37,7 +37,7 @@ Los obligatorios de **Estructuras de Datos y Algoritmos 2** están compuestos po
 
 Cada entrega/obligatorio debe cumplir con los ejercicios obligatorios que se detallan a continuación:
 
-**Obligatorio 1 (22/05):**
+**Obligatorio 1:**
 
 - [Ejercicio 1](/ejercicios/ejercicio1)
 - [Ejercicio 2](/ejercicios/ejercicio2)
@@ -45,7 +45,7 @@ Cada entrega/obligatorio debe cumplir con los ejercicios obligatorios que se det
 - [Ejercicio 4](/ejercicios/ejercicio4)
 - [Ejercicio 5](/ejercicios/ejercicio5)
 
-**Obligatorio 2 (21/06):**
+**Obligatorio 2:**
 
 - [Ejercicio 6](/ejercicios/ejercicio6)
 - [Ejercicio 7](/ejercicios/ejercicio7)

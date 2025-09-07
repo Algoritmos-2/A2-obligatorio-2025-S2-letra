@@ -27,6 +27,8 @@ los puntajes se dan de la siguiente manera: <br>
 gap (-) = -2 <br>
 no match = -1 <br>
 
+Los **gaps** solo pueden ir en aquellas secuencias que esten incompletas empujando o sustituyendo (en caso de vacío)
+
 ## Ejemplo
 
 ### Input

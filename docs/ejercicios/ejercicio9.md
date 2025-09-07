@@ -8,8 +8,11 @@ Con el nuevo objetivo de encontrar mutaciones genéticas más avanzadas, el equi
 Es por esto que la universidad recurre a ustedes, estudiantes de Algoritmos 2, con gran conocimiento en los algoritmos de programación dinámica. A cambio recibirán, cómo no, su respectiva nota por el trabajo realizado.
 
 ## Entrada
-
-Se reciben 3 secuencias (strings) donde cada valor se separa por coma (,) 
+La primera línea contiene un entero __N__ (0 < N &le; 10) que representa la cantidad de grupos de secuencias. <br>
+Luego se tienen __N__ * 5 líneas de la siguiente forma:<br>
+Se recibe __G__ (0 &le; __G__ &le; __L__) que representa la cantidad máxima de **_gaps_** que se pueden utilizar (**Esto no significa que se deban utilizar todos**)<br>
+Se recibe __L__ siendo __L__ el largo de las 3 secuencias que se encuentran a continuación <br>
+Los posibles caracteres son los siguientes: __A G C #__ siendo __#__ la representación del vacío. <br>
 
 
 ## Salida
@@ -18,34 +21,53 @@ un entero que represente el puntaje maximo posible.
 
 ## Restricciones
 
-los puntajes se dan de la siguiente manera:
-3 iguales = 5
-2 iguales = 2
-gap (-) = -2
-no match = -1
+los puntajes se dan de la siguiente manera: <br>
+3 iguales = 5 <br>
+2 iguales = 2 <br> 
+gap (-) = -2 <br>
+no match = -1 <br>
 
 ## Ejemplo
 
 ### Input
-
-"A,G,C"
-"A,C,#"
-"A,G,C"
+2 <br>
+1 <br>
+3 <br>
+AGC <br>
+AC# <br>
+AGC <br>
+0 <br>
+3 <br>
+AGC <br>
+AC# <br>
+AGC <br>
 
 ### Output
 
-10
+10 <br>
+9
+
 
 ### Explicación
 
-
 posibles puntajes:
-(si lo dejo como esta)
-"A,G,C"
-"A,C,#"     = 9 (3 iguales, (2) 2 iguales)
-"A,G,C"
 
-(agregando un gap)
-"A,G,C"
-"A,-,C"     = 10 ((2) 3 iguales, 2 iguales, gap)
-"A,G,C"
+(agregando un gap en el medio) <br>
+AGC <br>
+A-C <br>
+AGC <br>
+10 = ((2) 3 iguales, (1) 2 iguales, (1) gap)<br>
+
+(no agrego nada nada)<br>
+AGC <br>
+AC# <br>
+AGC <br>
+9 = ((1) 3 iguales, (2) 2 iguales, (0) gap)<br>
+
+
+(agrego gap al comienzo)<br>
+AGC <br>
+-AC <br>
+AGC <br>
+7 = ((1) 3 iguales, (2) 2 iguales, (1) gap)<br>
+

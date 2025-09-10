@@ -2,11 +2,11 @@
 
 ## Descripción
 
-Mike es un cidadano de Lineapolis, una ciudad que todas sus casas estan una al lado de la otra horizontalmente(Querian minimizar los semaforos al fundar la ciudad). Al ser una ciudad tan simple todas las casas tienen el mismo tamaño y estan numeradas iniciando en 1 e incrementando de a 1 cada casa a la derecha. Mike vive en la casa 1 y quiere visitar a su amigo que vive en la casa $F$. Pero su camino no sera tan facil, al ser una unica calle es muy dificil repararla y se han formando $N$ posos a lo largo del camino, haciendo que en esos tramos sea imposible usar su confiable skate. Ante el apuro de visitar a su amigo, Mike decidio agregarle propulsores al skate alterando como funciona completamente!
+Mike es un ciudadano de Lineapolis, una ciudad en la que todas sus casas estan una al lado de la otra horizontalmente(Querian minimizar los semaforos al fundar la ciudad). Al ser una ciudad tan simple todas las casas tienen el mismo tamaño y estan numeradas iniciando en 1 e incrementando de a 1 cada casa a la derecha. Mike vive en la casa 1 y quiere visitar a su amigo que vive en la casa $F$. Pero su camino no sera tan facil, al ser una unica calle es muy dificil repararla y se han formando $N$ posos a lo largo del camino, haciendo que en esos tramos sea imposible usar su confiable skate. Ante el apuro de visitar a su amigo, Mike decidio agregarle propulsores al skate alterando como funciona completamente!
 
 Estos propulsores cuentan con una Potencia $P$, inicialmente en 1 de potencia. Estos permiten moverse de la siguiente forma, Si estas parado en la casa $X$, podes impulsarte hasta cualquier casa en el rango $[X, X + P]$. Pero iniciar el movimiento o terminarlo en un poso es peligroso ya que Mike se puede caer asi que en ningun momento tomara esa desicion, preferiria quedarse quieto!
 
-Afortunadamente hay $M$ vecinos que cuentan con mejoras para el propulsor, aumentando la potencia en $P_i$. Pero Mike no quiere parecer aprovechado asi que quiere minimizar la cantidad de veces que pide ayuda a sus vecinos para llegar. Como se encuentra muy apurado te pide a ti que calcules la minima cantidad de vecinos a los que pedirle ayuda y que le permita llegar a la casa de su amigo. Si no es capaz de llegar imprimir "Imposible".
+Afortunadamente hay $M$ vecinos que cuentan con mejoras para el propulsor, aumentando la potencia en $P_i$. Pero Mike no quiere parecer aprovechado asi que quiere minimizar la cantidad de veces que pide ayuda a sus vecinos para llegar. Como se encuentra muy apurado te pide a ti que calcules la minima cantidad de vecinos a los que pedirle ayuda y que le permita llegar a la casa de su amigo. Si no es capaz de llegar hay que imprimir "Imposible".
 
 ## Entrada
 

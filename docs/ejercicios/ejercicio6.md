@@ -56,7 +56,7 @@ Debe imprimir una unica linea conteniendo la minima candidad de vecinos a los qu
 ```
 2 3 12
 3 4
-8 11
+8 10
 2 2
 5 3
 7 1

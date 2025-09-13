@@ -25,7 +25,7 @@ Estás desarrollando un sistema de cache para un navegador web que almacena info
 - `GET`: Imprimir `{titulo} {tiempo}` si existe, o `recurso_no_encontrado` si no existe.
 - `CONTAINS`: Imprimir `true` si existe, `false` si no existe.
 - `COUNT_DOMAIN`: Imprimir la cantidad de recursos del dominio especificado.
-- `LIST_DOMAIN`: Imprimir los paths del dominio separados por espacios, ordenados por tiempo descendente (más reciente primero).
+- `LIST_DOMAIN`: Imprimir los paths del dominio separados por espacios, ordenados por su reciente inserción/actualización (**no es por el atributo tiempo**). Si no existe el dominio o no tiene paths, imprime una linea vacía.
 - `SIZE`: Imprimir el número total de recursos en el cache.
 
 ## Restricciones
@@ -38,10 +38,11 @@ Estás desarrollando un sistema de cache para un navegador web que almacena info
 - Se debe utilizar una tabla de hash cerrada con doble hashing.
 
 **Complejidades requeridas:**
-- `GET`, `REMOVE`, `CONTAINS`: $O(1)$ promedio
-- `PUT`: $O(k)$ donde k es la cantidad de recursos del dominio 
-- `COUNT_DOMAIN`, `LIST_DOMAIN`, `CLEAR_DOMAIN`: $O(k)$ donde k es la cantidad de recursos del dominio
-- `SIZE`, `CLEAR`: $O(1)$
+
+- `SIZE` : $O(1)$ peor caso
+- `GET`, `CONTAINS`, `COUNT_DOMAIN` : $O(1)$ promedio
+- `PUT`, `REMOVE`, `LIST_DOMAIN`, `CLEAR_DOMAIN`: $O(k)$ promedio donde k es la cantidad de recursos del dominio
+- `CLEAR`: $O(R)$ donde R es la cantidad total de recursos en el cache
 
 ## Ejemplo
 
@@ -71,10 +72,10 @@ CLEAR
 ```
 4
 3
-/images /maps /search
+/maps /images /search
 SearchPage 1000
 false
-/search /images /maps
+/search /maps /images
 1
 0
 ```

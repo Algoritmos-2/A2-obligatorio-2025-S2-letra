@@ -42,7 +42,7 @@ Estás desarrollando un sistema de cache para un navegador web que almacena info
 - `SIZE` : $O(1)$ peor caso
 - `GET`, `CONTAINS`, `COUNT_DOMAIN` : $O(1)$ promedio
 - `PUT`, `REMOVE`, `LIST_DOMAIN`, `CLEAR_DOMAIN`: $O(k)$ promedio donde k es la cantidad de recursos del dominio
-- `CLEAR`: $O(R)$ donde R es la cantidad total de recursos en el cache
+- `CLEAR`: $O(M + R)$ donde M es el tamaño de la tabla y R es la cantidad total de recursos en el cache
 
 ## Ejemplo
 

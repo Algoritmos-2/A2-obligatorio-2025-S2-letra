@@ -1,4 +1,4 @@
-# Ejercicio 10 - Búsqueda de producto en FC
+# Ejercicio 10 - Búsqueda de producto en Amazon
 
 ## Descripción
 Jeff Bezos quiere saber cuál de todos sus Fullfilment Centers (FC) es el más rápido en buscar un producto genérico aleatorio. Se sabe que este producto se encuentra en todos los FCs a evaluar por lo que no se debe consultar si se encuentra disponible. La consigna consta en encontrar el producto en la menor cantidad de pasos desde la entrada del FC (posición 0,0).

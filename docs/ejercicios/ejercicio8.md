@@ -7,8 +7,9 @@ Tienes una línea horizontal de fragmentos de cristal de diferentes colores. Cad
 Tu objetivo es eliminar todos los fragmentos para obtener el máximo puntaje posible.
 
 **Reglas del juego:**
+
 - En cada turno, puedes seleccionar un **grupo de fragmentos consecutivos del mismo color**
-- Si eliminas un grupo de K fragmentos, estos resuenan y obtienes **K² puntos de energía**
+- Si eliminas un grupo de K fragmentos, estos resuenan y obtienes **K² puntos de energía** <- Sweet!
 - Los fragmentos restantes se deslizan automáticamente para llenar el espacio vacío, formando una nueva línea continua
 
 **Importante:** Solo puedes eliminar fragmentos que estén juntos y sean del mismo color. No puedes saltar fragmentos de otros colores.
@@ -49,6 +50,7 @@ Un único entero representando la cantidad máxima de puntos que se pueden obten
 #### Explicación
 
 Estrategia óptima:
+
 1. Eliminar `[2]` en posición 1: 1² = 1 punto → Queda `[1, 1, 1, 2]`
 2. Eliminar `[1, 1, 1]`: 3² = 9 puntos → Queda `[2]`
 3. Eliminar `[2]`: 1² = 1 punto
@@ -56,11 +58,11 @@ Estrategia óptima:
 **Total: 1 + 9 + 1 = 11 puntos**
 
 Si hubiéramos eliminado de otra forma:
+
 - Eliminar primero `[1]`: 1 punto → Queda `[2, 1, 1, 2]`
-- Eliminar `[2]`: 1 punto → Queda `[1, 1, 2]`
 - Eliminar `[1, 1]`: 4 puntos → Queda `[2]`
-- Eliminar `[2]`: 1 punto
-- Total: 1 + 1 + 4 + 1 = 7 puntos (subóptimo)
+- Eliminar `[2, 2]`: 4 puntos
+- Total: 1 + 4 + 4 = 9 puntos (subóptimo)
 
 ### Ejemplo 2
 
@@ -101,10 +103,10 @@ Si elimináramos de a uno obtendríamos: 1 + 1 + 1 = 3 puntos (mucho peor).
 #### Explicación
 
 Una estrategia óptima (hay varias):
+
 1. Eliminar `[2, 2, 2]`: 3² = 9 puntos → Queda `[1, 3, 3, 4, 3, 1]`
 2. Eliminar `[4]`: 1² = 1 punto → Queda `[1, 3, 3, 3, 1]`
 3. Eliminar `[3, 3, 3]`: 3² = 9 puntos → Queda `[1, 1]`
 4. Eliminar `[1, 1]`: 2² = 4 puntos
 
 **Total: 9 + 1 + 9 + 4 = 23 puntos**
-

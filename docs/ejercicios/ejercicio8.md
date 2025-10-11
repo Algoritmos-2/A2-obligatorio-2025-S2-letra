@@ -28,7 +28,11 @@ Un único entero representando la cantidad máxima de puntos que se pueden obten
 ## Restricciones
 
 - $1 \leq N \leq 100$
-- Complejidad esperada: O(N³)
+
+## Complejidad Esperada
+
+- **Tiempo**: $O(N^4)$ donde $N$ es la cantidad de fragmentos
+- **Espacio**: $O(N^3)$ para la tabla de memoización
 
 ## Ejemplos
 

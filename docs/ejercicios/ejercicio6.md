@@ -46,6 +46,7 @@ Debe imprimir una única línea conteniendo la mínima cantidad de vecinos a los
 - $2 \leq X_i \leq F - 1, 1 \leq P_i \leq 10^9 $
 - Los vecinos están ordenados por posición
 - $X_i + 1 \leq X_{i+1}$
+- Resolver usando estrategia greedy
 
 ## Complejidad Esperada
 

@@ -1,30 +1,50 @@
 # Ejercicio 10 - Búsqueda de producto en Amazon
 
 ## Descripción
-Jeff Bezos quiere saber cuál de todos sus Fullfilment Centers (FC) es el más rápido en buscar un producto genérico aleatorio. Se sabe que este producto se encuentra en todos los FCs a evaluar por lo que no se debe consultar si se encuentra disponible. La consigna consta en encontrar el producto en la menor cantidad de pasos desde la entrada del FC (posición 0,0).
+
+Jeff Bezos quiere saber cuál de todos sus Fulfillment Centers (FC) es el más rápido en buscar un producto genérico aleatorio. Se sabe que este producto se encuentra en todos los FCs a evaluar, por lo que no se debe consultar si está disponible.
+
+El objetivo es encontrar el producto usando **backtracking** para explorar todos los posibles caminos desde la entrada del FC (posición 0,0) y determinar cuál FC puede encontrar el producto en la menor cantidad de pasos.
 
 ## Entrada
-La primera línea contiene un caracter que significa el producto a buscar en los FC.
 
-La segunda línea contiene un natural $P$, con ($1 \leq P \leq 1000$), este denota la cantidad de FCs en donde se va a buscar el producto.
+- La primera línea contiene un carácter que representa el producto a buscar en los FCs.
+- La segunda línea contiene un natural $P$ ($1 \leq P \leq 1000$), que denota la cantidad de FCs en donde se va a buscar el producto.
 
-La línea siguiente contiene dos naturales $M$ $N$, con ($1 \leq M \leq 100$) ($1 \leq N \leq 100$), que significan las dimensiones del siguiente FC, siendo $M$ las filas y $N$ las columnas del mismo. Por lo que las siguientes $M$ lineas del archivo de entrada contienen $N$ caracteres cada una.
+Para cada FC (repetir $P$ veces):
 
-Los productos en el FC están representados con caracteres, el único caracter que no significa un producto es el 'C' que significa un corredor, lugar por donde se puede mover.
+- Una línea con dos naturales $M$ y $N$ ($1 \leq M \leq 100$, $1 \leq N \leq 100$), que representan las dimensiones del FC: $M$ filas y $N$ columnas.
+- Las siguientes $M$ líneas contienen $N$ caracteres **separados por espacios**, representando el mapa del FC.
+
+**Caracteres del mapa:**
+
+- `'C'`: Corredor (celda por donde se puede mover)
+- Cualquier otro carácter: Representa un producto (NO se puede atravesar, solo se puede llegar a él si es el producto buscado)
 
 ## Salida
-La salida contendrá el FC que pudo encontrar el producto en menor cantidad de pasos y , separado, la cantidad de pasos desde la entrada de dicho FC hasta el producto.
+
+Imprimir el **índice del FC** (comenzando en 1) que encontró el producto en menor cantidad de pasos, seguido de un espacio y la **cantidad de pasos** necesarios.
+
+Si varios FCs encuentran el producto en la misma cantidad de pasos, devolver el de **menor índice**.
 
 ## Restricciones
-- ($1 \leq P \leq 1000$)
-- ($1 \leq M \leq 100$)
-- ($1 \leq N \leq 100$)
-- Entrar al FC cuenta como un paso.
-- Para considerarse encontrado el producto se debe pararse sobre su celda.
+
+- $1 \leq P \leq 1000$
+- $1 \leq M \leq 100$
+- $1 \leq N \leq 100$
+- La posición inicial es siempre $(0, 0)$ (esquina superior izquierda del mapa)
+- Se puede mover solo por celdas con `'C'` (corredores) o hacia el producto buscado
+- Movimientos permitidos: **4 direcciones** (arriba, abajo, izquierda, derecha)
+- **Cada movimiento de una celda a otra cuenta como un paso**
+- **Estar en la posición inicial (0,0) NO cuenta como paso**. El primer paso se cuenta al moverse a otra celda
+- Para considerarse encontrado, se debe llegar a la celda del producto
+- Se debe utilizar **backtracking** para explorar todos los caminos posibles y encontrar el más corto
+- Se garantiza que siempre existe un camino válido desde (0,0) hasta el producto en cada FC
 
 ## Ejemplo
 
 ### Input
+
 ```
 S
 3
@@ -61,13 +81,16 @@ J D A F C C H
 ```
 
 ### Output
+
 ```
-1 12
+1 11
 ```
 
 ### Explicación
+
 El producto a buscar es 'S'.
 
 Hay 3 FCs en donde buscar, con diferentes dimensiones cada uno.
 
-El FC en encontrar el producto más rápidamente fue el 1 y lo hizo en 12 pasos.
+El FC en encontrar el producto más rápidamente fue el 1 y lo hizo en 11 pasos.
+

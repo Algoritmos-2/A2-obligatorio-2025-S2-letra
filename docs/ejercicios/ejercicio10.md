@@ -29,9 +29,9 @@ Si varios FCs encuentran el producto en la misma cantidad de pasos, devolver el 
 
 ## Restricciones
 
-- $1 \leq P \leq 1000$
-- $1 \leq M \leq 100$
-- $1 \leq N \leq 100$
+- $1 \leq P \leq 10000$
+- $1 \leq M \leq 50$
+- $1 \leq N \leq 50$
 - La posición inicial es siempre $(0, 0)$ (esquina superior izquierda del mapa)
 - Se puede mover solo por celdas con `'C'` (corredores) o hacia el producto buscado
 - Movimientos permitidos: **4 direcciones** (arriba, abajo, izquierda, derecha)
@@ -39,7 +39,6 @@ Si varios FCs encuentran el producto en la misma cantidad de pasos, devolver el 
 - **Estar en la posición inicial (0,0) NO cuenta como paso**. El primer paso se cuenta al moverse a otra celda
 - Para considerarse encontrado, se debe llegar a la celda del producto
 - Se debe utilizar **backtracking** para explorar todos los caminos posibles y encontrar el más corto
-- Se garantiza que siempre existe un camino válido desde (0,0) hasta el producto en cada FC
 
 ## Ejemplo
 
@@ -93,4 +92,3 @@ El producto a buscar es 'S'.
 Hay 3 FCs en donde buscar, con diferentes dimensiones cada uno.
 
 El FC en encontrar el producto más rápidamente fue el 1 y lo hizo en 11 pasos.
-

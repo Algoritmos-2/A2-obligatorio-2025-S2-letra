@@ -6,15 +6,15 @@ Mike es un ciudadano de Lineapolis, una ciudad en la que todas sus casas están 
 
 Estos propulsores cuentan con una Potencia $P$, inicialmente en 1 de potencia. Estos permiten moverse de la siguiente forma: si estás parado en la casa $X$, podés impulsarte hasta cualquier casa en el rango $[X, X + P]$. Pero iniciar el movimiento o terminarlo en un pozo es peligroso ya que Mike se puede caer, así que en ningún momento tomará esa decisión, ¡preferiría quedarse quieto!
 
-Afortunadamente hay $M$ vecinos que cuentan con mejoras para el propulsor, aumentando **permanentemente** la potencia en $P_i$ (es decir, la potencia es acumulativa: si P = 1 y se obtiene una mejora de 2, la nueva potencia será P = 3 y se mantendrá así para el resto del viaje). Pero Mike no quiere parecer aprovechado, así que quiere minimizar la cantidad de veces que pide ayuda a sus vecinos para llegar. Como se encuentra muy apurado te pide a ti que calcules la mínima cantidad de vecinos a los que pedirle ayuda y que le permita llegar a la casa de su amigo. Si no es capaz de llegar hay que imprimir "Imposible".
+Afortunadamente hay $M$ mejoras disponibles de vecinos para el propulsor, aumentando **permanentemente** la potencia en $P_i$ (es decir, la potencia es acumulativa: si P = 1 y se obtiene una mejora de 2, la nueva potencia será P = 3 y se mantendrá así para el resto del viaje). Un mismo vecino puede ofrecer múltiples mejoras. Pero Mike no quiere parecer aprovechado, así que quiere minimizar la cantidad de mejoras que pide para llegar. Como se encuentra muy apurado te pide a ti que calcules la mínima cantidad de mejoras que necesita pedir y que le permita llegar a la casa de su amigo. Si no es capaz de llegar hay que imprimir "Imposible".
 
 ## Entrada
 
-La primera línea contiene 3 enteros, $N$, $M$ y $F$ ($0 \leq N \leq 10^5$, $0 \leq M \leq 10^5$, $3 \leq F \leq 10^9$) siendo $N$ la cantidad de pozos, $M$ los vecinos dispuestos a ayudar y $F$ la casa donde vive su amigo.
+La primera línea contiene 3 enteros, $N$, $M$ y $F$ ($0 \leq N \leq 10^5$, $0 \leq M \leq 10^5$, $3 \leq F \leq 10^9$) siendo $N$ la cantidad de pozos, $M$ la cantidad de mejoras disponibles y $F$ la casa donde vive su amigo.
 
 Las siguientes $N$ líneas contienen 2 enteros $I_i$ y $D_i$ ($2 \leq I_i \leq D_i \leq F - 1$) que representan dónde arranca y dónde termina el pozo $i$ respectivamente. Los pozos están ordenados y siempre hay al menos una calle bien entre 2 pozos ($D_i + 2 \leq I_{i+1}$).
 
-Las próximas $M$ líneas contienen 2 enteros $X_i$ y $P_i$ ($2 \leq X_i \leq F, 1 \leq P_i \leq 10^9 $) siendo $X_i$ la casa de un vecino con una mejora de potencia $P_i$. Las posiciones están ordenadas ($X_i + 1 \leq X_{i+1}$) y nunca va a haber un vecino disponible si su calle tiene pozos.
+Las próximas $M$ líneas contienen 2 enteros $X_i$ y $P_i$ ($2 \leq X_i \leq F, 1 \leq P_i \leq 10^9 $) siendo $X_i$ la casa donde está disponible una mejora de potencia $P_i$. Las mejoras están ordenadas por posición ($X_i \leq X_{i+1}$). Un mismo vecino puede ofrecer múltiples mejoras (apareciendo en varias líneas). Nunca va a haber una mejora disponible si su calle tiene pozos.
 
 $N$ $M$ $F$
 
@@ -32,7 +32,7 @@ $X_M$ $P_M$
 
 ## Salida
 
-Debe imprimir una única línea conteniendo la mínima cantidad de vecinos a los que pedirle ayuda. En caso de no poder llegar a la casa de su amigo imprimir "Imposible".
+Debe imprimir una única línea conteniendo la mínima cantidad de mejoras que necesita pedir. En caso de no poder llegar a la casa de su amigo imprimir "Imposible".
 
 ## Restricciones
 
@@ -42,15 +42,16 @@ Debe imprimir una única línea conteniendo la mínima cantidad de vecinos a los
 - Los pozos están ordenados
 - $2 \leq I_i \leq D_i \leq F - 1$
 - Entre 2 pozos siempre hay al menos una calle que está bien
-- Nunca va a haber un vecino disponible si su calle tiene pozos
+- Nunca va a haber una mejora disponible si su calle tiene pozos
 - $2 \leq X_i \leq F - 1, 1 \leq P_i \leq 10^9 $
-- Los vecinos están ordenados por posición
-- $X_i + 1 \leq X_{i+1}$
+- Las mejoras están ordenadas por posición
+- $X_i \leq X_{i+1}$
+- Un mismo vecino puede ofrecer múltiples mejoras
 - Resolver usando estrategia greedy
 
 ## Complejidad Esperada
 
-- **Tiempo**: $O(N\log M)$ donde $N$ es la cantidad de pozos y $M$ la cantidad de vecinos dispuestos a ayudar
+- **Tiempo**: $O(N\log M)$ donde $N$ es la cantidad de pozos y $M$ la cantidad de mejoras disponibles
 - **Espacio** $O(N + M)$
 
 ## Ejemplo

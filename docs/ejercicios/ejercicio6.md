@@ -6,7 +6,7 @@ Mike es un ciudadano de Lineapolis, una ciudad en la que todas sus casas están 
 
 Estos propulsores cuentan con una Potencia $P$, inicialmente en 1 de potencia. Estos permiten moverse de la siguiente forma: si estás parado en la casa $X$, podés impulsarte hasta cualquier casa en el rango $[X, X + P]$. Pero iniciar el movimiento o terminarlo en un pozo es peligroso ya que Mike se puede caer, así que en ningún momento tomará esa decisión, ¡preferiría quedarse quieto!
 
-Afortunadamente hay $M$ vecinos que cuentan con mejoras para el propulsor, aumentando la potencia en $P_i$. Pero Mike no quiere parecer aprovechado, así que quiere minimizar la cantidad de veces que pide ayuda a sus vecinos para llegar. Como se encuentra muy apurado te pide a ti que calcules la mínima cantidad de vecinos a los que pedirle ayuda y que le permita llegar a la casa de su amigo. Si no es capaz de llegar hay que imprimir "Imposible".
+Afortunadamente hay $M$ vecinos que cuentan con mejoras para el propulsor, aumentando **permanentemente** la potencia en $P_i$ (es decir, la potencia es acumulativa: si P = 1 y se obtiene una mejora de 2, la nueva potencia será P = 3 y se mantendrá así para el resto del viaje). Pero Mike no quiere parecer aprovechado, así que quiere minimizar la cantidad de veces que pide ayuda a sus vecinos para llegar. Como se encuentra muy apurado te pide a ti que calcules la mínima cantidad de vecinos a los que pedirle ayuda y que le permita llegar a la casa de su amigo. Si no es capaz de llegar hay que imprimir "Imposible".
 
 ## Entrada
 

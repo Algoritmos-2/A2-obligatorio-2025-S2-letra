@@ -9,7 +9,7 @@ El objetivo es encontrar el producto usando **backtracking** para explorar todos
 ## Entrada
 
 - La primera línea contiene un carácter que representa el producto a buscar en los FCs.
-- La segunda línea contiene un natural $P$ ($1 \leq P \leq 1000$), que denota la cantidad de FCs en donde se va a buscar el producto.
+- La segunda línea contiene un natural $P$ ($1 \leq P \leq 10000$), que denota la cantidad de FCs en donde se va a buscar el producto.
 
 Para cada FC (repetir $P$ veces):
 
@@ -30,8 +30,8 @@ Si varios FCs encuentran el producto en la misma cantidad de pasos, devolver el 
 ## Restricciones
 
 - $1 \leq P \leq 10000$
-- $1 \leq M \leq 50$
-- $1 \leq N \leq 50$
+- $1 \leq M \leq 100$
+- $1 \leq N \leq 100$
 - La posición inicial es siempre $(0, 0)$ (esquina superior izquierda del mapa)
 - Se puede mover solo por celdas con `'C'` (corredores) o hacia el producto buscado
 - Movimientos permitidos: **4 direcciones** (arriba, abajo, izquierda, derecha)
